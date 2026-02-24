@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gotcha - Account & Data Deletion Request</title>
+  <meta name="description" content="How to request deletion of your Gotcha account and associated data." />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #121a2a;
+      --text: #e8eefc;
+      --muted: #b7c3df;
+      --accent: #5aa2ff;
+      --border: rgba(255,255,255,.12);
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(90,162,255,.25), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(124,92,255,.22), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: 900px;
+      margin: 48px auto;
+      padding: 0 20px 64px;
+    }
+    .header {
+      margin-bottom: 22px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+    }
+    h1 {
+      margin: 14px 0 8px;
+      font-size: 28px;
+      letter-spacing: .2px;
+    }
+    p.lead {
+      margin: 0;
+      color: var(--muted);
+      max-width: 72ch;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .card {
+      background: rgba(18,26,42,.86);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.28);
+      backdrop-filter: blur(8px);
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .card p, .card li {
+      color: var(--muted);
+    }
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+    .steps ol {
+      margin: 10px 0 0 18px;
+      padding: 0;
+      color: var(--muted);
+    }
+    .footer {
+      margin-top: 22px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em;
+      color: var(--text);
+    }
+    @media (min-width: 860px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+      .span2 { grid-column: span 2; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="header">
+      <span class="badge">Gotcha • Account & Data Deletion</span>
+      <h1>Request deletion of your Gotcha account and data</h1>
+      <p class="lead">
+        This page explains how users can delete their Gotcha account and associated data.
+        In most cases, you can complete deletion directly inside the app.
+      </p>
+    </div>
+
+    <section class="grid">
+      <div class="card steps">
+        <h2>In-app deletion (recommended)</h2>
+        <p>Delete your account directly from the Gotcha app:</p>
+        <ol>
+          <li>Open <span class="mono">Gotcha</span></li>
+          <li>Go to <span class="mono">Settings</span></li>
+          <li>Select <span class="mono">Delete Account</span></li>
+          <li>Follow the confirmation steps to finalize deletion</li>
+        </ol>
+        <p style="margin-top:10px;">
+          If you are unable to access the app, use the email method below.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Email deletion request (alternative)</h2>
+        <p>
+          If you cannot delete your account in the app, you can request deletion by email:
+        </p>
+        <ul>
+          <li>Send an email to: <a href="mailto:review.gotcha@gmail.com">review.gotcha@gmail.com</a></li>
+          <li>Subject: <span class="mono">Account Deletion Request</span></li>
+          <li>Include the email address or identifier used to sign in (Kakao / Google / Apple).</li>
+        </ul>
+        <p style="margin-top:10px;">
+          We may ask for additional information only to verify account ownership.
+        </p>
+      </div>
+
+      <div class="card span2">
+        <h2>What data is deleted</h2>
+        <p>When your account is deleted, we delete the following data associated with your account:</p>
+        <ul>
+          <li>Profile information (e.g., profile photo, Instagram ID, campus/university, gender, and other profile settings you provided)</li>
+          <li>Service usage data linked to your account (as applicable)</li>
+          <li>Other content you submitted to the service (as applicable)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Retention period</h2>
+        <p>
+          Account deletion is processed as soon as possible after the request is confirmed.
+          Some data may be retained for a limited period where required for legal, security, fraud prevention,
+          or dispute-resolution purposes, after which it will be deleted.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Sign-in methods</h2>
+        <p>Gotcha does not provide username/password login. We support social login only:</p>
+        <ul>
+          <li>iOS (App Store): Kakao, Google, Apple</li>
+          <li>Android (Google Play): Kakao, Google</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p><strong>Gotcha</strong> — Account & Data Deletion Request Page</p>
+      <p>
+        Contact: <a href="mailto:review.gotcha@gmail.com">review.gotcha@gmail.com</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
