@@ -1,105 +1,50 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gotcha - Account & Data Deletion Request</title>
-  <meta name="description" content="How to request deletion of your Gotcha account and associated data." />
+  <title>Gotcha - 계정 및 데이터 삭제 안내</title>
+  <meta name="description" content="Gotcha 계정 및 데이터 삭제 방법 안내" />
   <style>
-    :root {
-      --bg: #0b0f19;
-      --card: #121a2a;
-      --text: #e8eefc;
-      --muted: #b7c3df;
-      --accent: #5aa2ff;
-      --border: rgba(255,255,255,.12);
+    :root{
+      --bg:#0b0f19; --card:rgba(18,26,42,.86); --text:#e8eefc; --muted:#b7c3df;
+      --accent:#5aa2ff; --border:rgba(255,255,255,.12);
     }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 10% 0%, rgba(90,162,255,.25), transparent 60%),
-                  radial-gradient(900px 500px at 90% 10%, rgba(124,92,255,.22), transparent 60%),
-                  var(--bg);
-      color: var(--text);
-      line-height: 1.55;
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 600px at 10% 0%, rgba(90,162,255,.25), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(124,92,255,.22), transparent 60%),
+        var(--bg);
+      color:var(--text); line-height:1.55;
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .wrap {
-      max-width: 900px;
-      margin: 48px auto;
-      padding: 0 20px 64px;
+    a{color:var(--accent); text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .wrap{max-width:900px; margin:48px auto; padding:0 20px 64px;}
+    .badge{
+      display:inline-block; font-size:12px; color:var(--muted);
+      border:1px solid var(--border); padding:6px 10px; border-radius:999px;
+      background:rgba(255,255,255,.04);
     }
-    .header {
-      margin-bottom: 22px;
+    h1{margin:14px 0 8px; font-size:28px; letter-spacing:.2px;}
+    p.lead{margin:0; color:var(--muted); max-width:72ch;}
+    .grid{display:grid; grid-template-columns:1fr; gap:14px; margin-top:20px;}
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:16px;
+      padding:18px 18px; box-shadow:0 12px 30px rgba(0,0,0,.28); backdrop-filter: blur(8px);
     }
-    .badge {
-      display: inline-block;
-      font-size: 12px;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.04);
+    .card h2{margin:0 0 10px; font-size:18px;}
+    .card p,.card li{color:var(--muted);}
+    ul,ol{margin:10px 0 0 18px; padding:0;}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; color:var(--text);}
+    .lang{display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;}
+    .pill{
+      border:1px solid var(--border); padding:6px 10px; border-radius:999px;
+      background:rgba(255,255,255,.04); color:var(--muted); font-size:12px;
     }
-    h1 {
-      margin: 14px 0 8px;
-      font-size: 28px;
-      letter-spacing: .2px;
-    }
-    p.lead {
-      margin: 0;
-      color: var(--muted);
-      max-width: 72ch;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 20px;
-    }
-    .card {
-      background: rgba(18,26,42,.86);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 18px 18px;
-      box-shadow: 0 12px 30px rgba(0,0,0,.28);
-      backdrop-filter: blur(8px);
-    }
-    .card h2 {
-      margin: 0 0 10px;
-      font-size: 18px;
-    }
-    .card p, .card li {
-      color: var(--muted);
-    }
-    ul {
-      margin: 10px 0 0 18px;
-      padding: 0;
-    }
-    .steps ol {
-      margin: 10px 0 0 18px;
-      padding: 0;
-      color: var(--muted);
-    }
-    .footer {
-      margin-top: 22px;
-      padding-top: 14px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .mono {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 0.95em;
-      color: var(--text);
-    }
-    @media (min-width: 860px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-      .span2 { grid-column: span 2; }
-    }
+    .footer{margin-top:22px; padding-top:14px; border-top:1px solid var(--border); color:var(--muted); font-size:13px;}
+    @media(min-width:860px){ .grid{grid-template-columns:1fr 1fr;} .span2{grid-column:span 2;} }
   </style>
 </head>
 
@@ -107,77 +52,75 @@
   <main class="wrap">
     <div class="header">
       <span class="badge">Gotcha • Account & Data Deletion</span>
-      <h1>Request deletion of your Gotcha account and data</h1>
+      <h1>계정 및 데이터 삭제 안내</h1>
       <p class="lead">
-        This page explains how users can delete their Gotcha account and associated data.
-        In most cases, you can complete deletion directly inside the app.
+        이 페이지는 <span class="mono">Gotcha</span> 사용자가 계정과 관련 데이터 삭제를 요청하는 방법을 안내합니다.
+        대부분의 경우 앱 내에서 즉시 삭제를 완료할 수 있습니다.
       </p>
+      <div class="lang">
+        <span class="pill">한국어(KO)</span>
+        <span class="pill">English(EN)</span>
+      </div>
     </div>
 
     <section class="grid">
-      <div class="card steps">
-        <h2>In-app deletion (recommended)</h2>
-        <p>Delete your account directly from the Gotcha app:</p>
+      <div class="card">
+        <h2>앱 내 삭제(권장)</h2>
+        <p>Gotcha 앱에서 아래 순서로 계정을 삭제할 수 있습니다.</p>
         <ol>
-          <li>Open <span class="mono">Gotcha</span></li>
-          <li>Go to <span class="mono">Settings</span></li>
-          <li>Select <span class="mono">Delete Account</span></li>
-          <li>Follow the confirmation steps to finalize deletion</li>
+          <li><span class="mono">Gotcha</span> 앱 실행</li>
+          <li><span class="mono">설정(Settings)</span> 이동</li>
+          <li><span class="mono">계정 삭제(Delete Account)</span> 선택</li>
+          <li>확인 절차를 진행하여 삭제 완료</li>
         </ol>
         <p style="margin-top:10px;">
-          If you are unable to access the app, use the email method below.
+          앱 접속이 어려운 경우, 아래 “이메일 요청” 방법을 이용하세요.
         </p>
       </div>
 
       <div class="card">
         <h2>Email deletion request (alternative)</h2>
-        <p>
-          If you cannot delete your account in the app, you can request deletion by email:
-        </p>
+        <p>If you cannot access the app, request deletion by email:</p>
         <ul>
-          <li>Send an email to: <a href="mailto:review.gotcha@gmail.com">review.gotcha@gmail.com</a></li>
+          <li>Email: <a href="mailto:review.gotcha@gmail.com">review.gotcha@gmail.com</a></li>
           <li>Subject: <span class="mono">Account Deletion Request</span></li>
-          <li>Include the email address or identifier used to sign in (Kakao / Google / Apple).</li>
+          <li>Include the identifier used to sign in (Kakao / Google / Apple).</li>
         </ul>
-        <p style="margin-top:10px;">
-          We may ask for additional information only to verify account ownership.
-        </p>
+        <p style="margin-top:10px;">We may request additional information only to verify account ownership.</p>
       </div>
 
       <div class="card span2">
-        <h2>What data is deleted</h2>
-        <p>When your account is deleted, we delete the following data associated with your account:</p>
+        <h2>삭제되는 데이터</h2>
         <ul>
-          <li>Profile information (e.g., profile photo, Instagram ID, campus/university, gender, and other profile settings you provided)</li>
-          <li>Service usage data linked to your account (as applicable)</li>
-          <li>Other content you submitted to the service (as applicable)</li>
+          <li>프로필 정보(프로필 사진, 닉네임, 인스타그램 아이디, 한줄소개, 선택 입력 항목 등)</li>
+          <li>서비스 이용을 위해 계정에 연결된 데이터(예: 코인 잔액/이용 기록 등, 해당되는 경우)</li>
+          <li>사용자가 제출한 기타 콘텐츠(해당되는 경우)</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2>Retention period</h2>
+        <h2>처리 기간 및 예외 보관</h2>
         <p>
-          Account deletion is processed as soon as possible after the request is confirmed.
-          Some data may be retained for a limited period where required for legal, security, fraud prevention,
-          or dispute-resolution purposes, after which it will be deleted.
+          삭제 요청 확인 후 가능한 한 신속히 처리합니다.
+          단, 법령 준수/보안/부정이용 방지/분쟁 해결을 위해 필요한 경우 일부 정보가 제한 기간 보관될 수 있으며,
+          해당 목적 달성 후 삭제합니다.
         </p>
       </div>
 
       <div class="card">
-        <h2>Sign-in methods</h2>
-        <p>Gotcha does not provide username/password login. We support social login only:</p>
+        <h2>로그인 방식</h2>
+        <p>Gotcha는 ID/비밀번호 로그인을 제공하지 않고 소셜 로그인만 지원합니다.</p>
         <ul>
-          <li>iOS (App Store): Kakao, Google, Apple</li>
-          <li>Android (Google Play): Kakao, Google</li>
+          <li>iOS(App Store): Kakao, Google, Apple</li>
+          <li>Android(Google Play): Kakao, Google</li>
         </ul>
       </div>
     </section>
 
     <div class="footer">
       <p><strong>Gotcha</strong> — Account & Data Deletion Request Page</p>
-      <p>
-        Contact: <a href="mailto:review.gotcha@gmail.com">review.gotcha@gmail.com</a>
-      </p>
+      <p>Contact: <a href="mailto:review.gotcha@gmail.com">review.gotcha@gmail.com</a></p>
+      <p style="margin-top:6px;">Privacy Policy: <a href="./privacy.html">개인정보처리방침</a></p>
     </div>
   </main>
 </body>
