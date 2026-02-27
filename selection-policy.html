@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gotcha - 선정 방식 및 무작위 구조 안내</title>
+  <meta name="description" content="Gotcha 서비스 내 프로필 선정 방식 및 무작위 구조 안내" />
+  <style>
+    :root{
+      --bg:#0b0f19; --card:rgba(18,26,42,.86); --text:#e8eefc; --muted:#b7c3df;
+      --accent:#5aa2ff; --border:rgba(255,255,255,.12);
+    }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+      background:
+        radial-gradient(1200px 600px at 10% 0%, rgba(90,162,255,.25), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(124,92,255,.22), transparent 60%),
+        var(--bg);
+      color:var(--text); line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none;}
+    .wrap{max-width:900px; margin:48px auto; padding:0 20px 64px;}
+    .badge{
+      display:inline-block; font-size:12px; color:var(--muted);
+      border:1px solid var(--border); padding:6px 10px; border-radius:999px;
+      background:rgba(255,255,255,.04);
+    }
+    h1{margin:14px 0 8px; font-size:28px;}
+    p.lead{color:var(--muted);}
+    .grid{display:grid; gap:14px; margin-top:20px;}
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:16px;
+      padding:18px; box-shadow:0 12px 30px rgba(0,0,0,.28);
+    }
+    .card h2{margin:0 0 10px; font-size:18px;}
+    .card p,.card li{color:var(--muted);}
+    ul{margin:10px 0 0 18px;}
+    .footer{margin-top:22px; padding-top:14px; border-top:1px solid var(--border); color:var(--muted); font-size:13px;}
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <span class="badge">Gotcha • Selection Policy</span>
+    <h1>프로필 선정 방식 안내</h1>
+    <p class="lead">
+      본 페이지는 Gotcha 서비스 내 가챠, 집게 뽑기 및 미니게임 보상 구조에 대한
+      선정 방식과 무작위 처리 기준을 설명합니다.
+    </p>
+
+    <section class="grid">
+
+      <div class="card">
+        <h2>1. 가챠 머신 (무작위 선정 구조)</h2>
+        <ul>
+          <li>가챠는 사용자 프로필이 담긴 “캡슐 단위”로 구성됩니다.</li>
+          <li>사용자가 설정한 조건(예: 성별 등)에 따라 후보군이 먼저 구성됩니다.</li>
+          <li>구성된 후보군 내 모든 캡슐은 동일한 기준으로 선택됩니다.</li>
+          <li>특정 사용자에게 불리하거나 유리하도록 확률을 개별 조정하지 않습니다.</li>
+          <li>선정 결과는 디지털 프로필 열람 기능에만 적용됩니다.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>2. 집게 뽑기 머신 (사용자 선택 구조)</h2>
+        <ul>
+          <li>서버가 구성한 10개의 프로필 박스가 화면에 배치됩니다.</li>
+          <li>사용자가 직접 조작하여 선택한 박스가 최종 결과가 됩니다.</li>
+          <li>이는 랜덤 자동 지급 방식이 아닌 사용자 선택 기반 게임 구조입니다.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>3. 미니게임 보상 구조</h2>
+        <ul>
+          <li>미니게임에서 목표 점수를 달성할 경우 프로필 열람 기회가 제공됩니다.</li>
+          <li>보상은 앱 내 디지털 기능에 한정됩니다.</li>
+          <li>현금, 실물 상품, 환전성 보상은 제공하지 않습니다.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>4. 사행성 및 도박 요소 부존재</h2>
+        <ul>
+          <li>본 서비스는 현금화, 환전, 재판매 기능을 제공하지 않습니다.</li>
+          <li>모든 보상은 디지털 프로필 열람 기능에 한정됩니다.</li>
+          <li>실물 경품, 금전적 가치가 있는 상품은 존재하지 않습니다.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <div class="footer">
+      <p><strong>Gotcha</strong> — Selection & Randomization Policy</p>
+      <p>Contact: <a href="mailto:minitomo6973@gmail.com">minitomo6973@gmail.com</a></p>
+      <p>Privacy Policy: 
+        <a href="https://gatcha-pro.github.io/gotcha-policy/">
+          https://gatcha-pro.github.io/gotcha-policy/
+        </a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
